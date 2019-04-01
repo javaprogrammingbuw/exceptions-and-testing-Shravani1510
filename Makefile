@@ -5,7 +5,7 @@ all: test
 %.class: %.java
 	javac $^
 
-test: Main.class TestSuite.class
+test: TestSuite.class
 	java TinyTestJ.RunTests TestSuite
 
 clean:
